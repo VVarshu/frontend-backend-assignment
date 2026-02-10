@@ -1,0 +1,211 @@
+/* GENERAL BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #310223, #170135); /* gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* top align */
+  padding-top: 50px;
+  color: #000; /* default body text black */
+}
+
+/* PAGE CONTAINER */
+.page-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0077ff;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 160px; /* more space between buttons */
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.navbar button {
+  background: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background: #e0e0e0;
+}
+
+/* LOGIN / REGISTER CONTAINER */
+.auth-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* spacing between inputs/buttons */
+}
+
+/* HEADINGS */
+.auth-container h2 {
+  margin-bottom: 25px;
+  color: #0077ff;
+}
+
+/* INPUTS */
+.auth-container input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.auth-container button, .task-form button {
+  padding: 10px 18px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.auth-container button:hover, .task-form button:hover {
+  background: #005bbb;
+}
+
+/* REGISTER BUTTON ON LOGIN PAGE */
+.register-btn {
+  background: #28a745;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.register-btn:hover {
+  background: #1e7e34;
+}
+
+/* AUTH LINKS */
+.auth-links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  color: #0077ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* make "Forgot password?" visible on dark background */
+.auth-links p span.link {
+  color: #ffdd57; /* bright yellow */
+  font-weight: bold;
+}
+
+/* TASKS PAGE */
+.task-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #021e21;
+}
+
+/* SEARCH BAR SEPARATE */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 400px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* TASK CARD */
+.tasks-list .task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d1e7dd; /* soft green for tasks */
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  color: #000; /* black task text */
+  font-size: 18px; /* bigger font */
+}
+
+.tasks-list .task-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-buttons button {
+  margin-left: 12px;
+  background: #0077ff;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 14px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: bold;
+}
+
+/* PAGE TITLES */
+h1, h2 {
+  text-align: center;
+  color: white; /* white headings */
+  margin-bottom: 25px;
+}
